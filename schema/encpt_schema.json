@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "eNCPT Clinical Charting Schema",
+  "type": "object",
+  "properties": {
+    "encounter_id": { "type": "string" },
+    "patient_id": { "type": "string" },
+    "nutrition_assessment": { "type": "object" },
+    "nutrition_diagnosis": { "type": "array" },
+    "nutrition_intervention": { "type": "array" },
+    "monitoring_evaluation": { "type": "array" }
+  },
+  "required": [
+    "encounter_id",
+    "patient_id",
+    "nutrition_assessment",
+    "nutrition_diagnosis",
+    "nutrition_intervention",
+    "monitoring_evaluation"
+  ]
+}
